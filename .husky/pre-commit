@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+set -e
+
+echo "husky - running lint before commit..."
+npm run lint

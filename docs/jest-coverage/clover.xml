@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1764840186537" clover="3.2.0">
+  <project timestamp="1764840186537" name="All files">
+    <metrics statements="15" coveredstatements="14" conditionals="4" coveredconditionals="2" methods="9" coveredmethods="9" elements="28" coveredelements="25" complexity="0" loc="15" ncloc="15" packages="2" files="2" classes="2"/>
+    <package name="hooks">
+      <metrics statements="8" coveredstatements="7" conditionals="4" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <file name="useImmer.ts" path="/Users/liushasha/workspace/web3/handler-spa/react-webpack/hooks/useImmer.ts">
+        <metrics statements="8" coveredstatements="7" conditionals="4" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="1" count="15" type="stmt"/>
+        <line num="2" count="11" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="11" count="7" type="stmt"/>
+        <line num="15" count="7" type="stmt"/>
+        <line num="16" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+      <file name="comp.tsx" path="/Users/liushasha/workspace/web3/handler-spa/react-webpack/src/comp.tsx">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

@@ -1,0 +1,136 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 1,
+  "numPassedTests": 4,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 1,
+  "numTotalTests": 4,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1764840184485,
+  "success": false,
+  "testResults": [
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 4,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1764840186448,
+        "loadTestEnvironmentEnd": 1764840185869,
+        "loadTestEnvironmentStart": 1764840184595,
+        "runtime": 576,
+        "setupAfterEnvEnd": 1764840186132,
+        "setupAfterEnvStart": 1764840186128,
+        "setupFilesEnd": 1764840185872,
+        "setupFilesStart": 1764840185872,
+        "slow": false,
+        "start": 1764840185872
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "/Users/liushasha/workspace/web3/handler-spa/react-webpack/tests/unit/index.spec.tsx",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Comp component"
+          ],
+          "duration": 80,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Comp component renders hi text",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1764840186157,
+          "status": "passed",
+          "title": "renders hi text"
+        },
+        {
+          "ancestorTitles": [
+            "Comp component"
+          ],
+          "duration": 167,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Comp component updates name via useImmer + useEffect",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1764840186238,
+          "status": "passed",
+          "title": "updates name via useImmer + useEffect"
+        },
+        {
+          "ancestorTitles": [
+            "useImmer hook"
+          ],
+          "duration": 27,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "useImmer hook initializes state correctly",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1764840186405,
+          "status": "passed",
+          "title": "initializes state correctly"
+        },
+        {
+          "ancestorTitles": [
+            "useImmer hook"
+          ],
+          "duration": 14,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "useImmer hook updates state through draft function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1764840186433,
+          "status": "passed",
+          "title": "updates state through draft function"
+        }
+      ],
+      "failureMessage": null
+    }
+  ],
+  "wasInterrupted": false
+}
