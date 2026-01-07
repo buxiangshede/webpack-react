@@ -19,6 +19,13 @@ module.exports = {
     static: {
       directory: join(__dirname, "../dist"),
     },
+    proxy: [
+      {
+        context: ["/api"],
+        target: "http://localhost:4000",
+        changeOrigin: true,
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({

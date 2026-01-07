@@ -7,7 +7,11 @@ const _mode = argv.mode || "development";
 const _modeflag = _mode === "production" ? true : false;
 
 const _devConfig = require(`./config/webpack.${_mode}.js`);
-
+const cssLoaders = (withPostcss = false) => [
+  _modeflag ? MiniCssExtractPlugin.loader : "style-loader",
+  "css-loader",
+  ...(withPostcss ? ["postcss-loader"] : []),
+];
 const webpackConfig = {
   entry: {
     main: resolve(__dirname, "src/index.tsx"),
@@ -31,12 +35,12 @@ const webpackConfig = {
       },
       {
         test: /\.css$/i,
+        // sideEffects: true,
         use: [
           MiniCssExtractPlugin.loader,
-          // 'style-loader',
-          { loader: "css-loader", options: { importLoaders: 1 } },
+          "css-loader",
           "postcss-loader",
-        ],
+        ]
       },
     ],
   },
@@ -65,15 +69,15 @@ const webpackConfig = {
   },
   plugins: [
       new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({
-      filename: _modeflag
-        ? "styles/[name].[contenthash:5].css"
-        : "styles/[name].css",
-      chunkFilename: _modeflag
-        ? "styles/[name].[contenthash:5].css"
-        : "styles/[name].css",
-      ignoreOrder: false,
-    }),
+      new MiniCssExtractPlugin({
+        filename: _modeflag
+          ? "styles/[name].[contenthash:5].css"
+          : "styles/[name].css",
+        chunkFilename: _modeflag
+          ? "styles/[name].[contenthash:5].css"
+          : "styles/[name].css",
+        ignoreOrder: false,
+      }),
   ],
 };
 module.exports = merge.default(webpackConfig, _devConfig);

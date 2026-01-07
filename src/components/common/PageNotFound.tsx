@@ -16,3 +16,5 @@ export const PageNotFound = () => {
     </section>
   );
 };
+
+export default PageNotFound;
